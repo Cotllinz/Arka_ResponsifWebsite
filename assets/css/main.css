@@ -275,6 +275,7 @@ p.price__product {
 span.title_logoFooter {
   font-size: 20px;
   font-weight: 700;
+  margin-left: 10px;
   font-family: "Rubik", sans-serif;
 }
 p.desc__footer{
