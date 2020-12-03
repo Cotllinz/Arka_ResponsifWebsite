@@ -46,13 +46,15 @@ button.button__logoSearching {
 span.supply__Product {
   background-color: #6a4029;
   color: white;
+  width: 25px;
+  object-fit: contain;
+  border: 1px solid;
   position: absolute;
   bottom: 19.5px;
   font-size: 10px;
-  right: 22.4px;
+  right: 19px;
   text-align: center;
-  padding: 1px 5px 1px 5px;
-  object-fit: contain;
+  padding: 3px 4px 3.1px 4px;
 }
 
 .costumer__Logo {
@@ -223,7 +225,7 @@ img.card__promoStyled {
 }
 .card__bodyProduct {
   height: 220px;
-  position: relative;
+  position: absolute;
   top: 50px;
   width: 156px;
   background: #ffffff;
@@ -234,14 +236,16 @@ img.card__promoStyled {
 h2.title__Product {
   top: 95px;
   padding: 0 20px;
-  position: relative;
+  color: #000;
+  position: absolute;
   font-weight: 900;
   font-size: 22px;
   text-align: center;
 }
 p.price__product {
-  top: 95px;
-  position: relative;
+  top: 180px;
+  left: 35px;
+  position: absolute;
   font-weight: 700;
   font-size: 17px;
   color: #6a4029;

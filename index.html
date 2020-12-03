@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Navbar Component -->
-    <nav class="navbar mt-2 mt-lg-2 navbar-expand-lg">
+    <nav class="navbar pt-3 navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand navbar-logo" href="#"
           ><img src="./assets/images/logo/logoNav.svg" alt="" />
@@ -90,7 +90,7 @@
               />
             </button>
             <a href="#" class="position-relative mr-lg-4"
-              ><span class="rounded-circle supply__Product">1</span
+              ><span class="rounded-circle supply__Product">99+</span
               ><img
                 class="chat__Logo"
                 src="./assets/images/Icons/chatIcons.svg"
@@ -157,16 +157,15 @@
               </ol>
             </div>
           </div>
-         
+
           <div class="col-lg-8">
-            <hr style="border: 1px solid;" class="d-md-block d-lg-none">
+            <hr style="border: 1px solid" class="d-md-block d-lg-none" />
             <div class="menu__list">
               <div class="container">
                 <div class="menus d-flex bd-highlight">
                   <div
                     class="menu_items active px-xl-4 p-2 flex-lg-fill bd-highlight"
                   >
-                  
                     <a class="menu__links" href="#">Favorite Product</a>
                   </div>
                   <div class="menu_items px-xl-4 p-2 flex-lg-fill bd-highlight">
@@ -188,15 +187,17 @@
                   >
                     <div class="col product__list mb-4">
                       <div class="card__product position-relative">
-                        <img
-                          class="card__imageProduct position-absolute"
-                          src="./assets/images/mainImage/Product1.svg"
-                          alt="image__product"
-                        />
-                        <div class="card__bodyProduct">
-                          <h2 class="title__Product">Veggie tomato mix</h2>
-                          <p class="price__product">IDR 34.000</p>
-                        </div>
+                        <a href="./detail_product.html">
+                          <img
+                            class="card__imageProduct position-absolute"
+                            src="./assets/images/mainImage/Product1.svg"
+                            alt="image__product"
+                          />
+                          <div class="card__bodyProduct">
+                            <h2 class="title__Product">Veggie tomato mix</h2>
+                            <p class="price__product">IDR 34.000</p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                     <div class="col product__list mb-4">
@@ -350,11 +351,11 @@
         </div>
       </header>
     </div>
-
-    <footer class="section-footer bg-light mb-2 border-top">
+    <!-- Footer Section -->
+    <footer class="section-footer mb-2 border-top">
       <div class="container mt-4 mt-lg-5">
         <div class="d-flex flex-column flex-lg-row bd-highlight">
-          <div class="p-2 flex-grow-1 bd-highlight">
+          <div class="order-3 order-lg-1 p-2 flex-grow-1 bd-highlight">
             <div class="d-flex align-items-center">
               <img src="./assets/images/logo/logoNav.svg" alt="FooterLogo" />
               <span class="title_logoFooter">Coffie Shop</span>
@@ -382,7 +383,7 @@
             </div>
             <p class="bywhat mt-3 mt-lg-3">©2020CoffeeStore</p>
           </div>
-          <div class="p-2 bd-highlight pr-lg-5">
+          <div class="order-1 order-lg-2 p-2 bd-highlight pr-lg-5">
             <h5 class="title_productFooter">Product</h5>
             <ul class="list-unstyled mt-lg-3">
               <li><a href="#">Download </a></li>
@@ -392,10 +393,10 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="p-2 bd-highlight pl-lg-5 ">
+          <div class="order-2 order-lg-3 p-2 bd-highlight pl-lg-5">
             <h5 class="title_productFooter">Engage</h5>
             <ul class="list-unstyled mt-lg-3">
-              <li><a href="#">Coffe Shop ?  </a></li>
+              <li><a href="#">Coffe Shop ? </a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Privacy Policy</a></li>

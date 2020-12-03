@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop - Rudy</title>
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="./assets/css/details.css" />
+    <!-- Font Link GoogleFont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstraps Css Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- ================================================================= -->
+  </head>
+  <body>
+    <!-- Navbar Component -->
+    <nav class="navbar pt-3 navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="#"
+          ><img src="./assets/images/logo/logoNav.svg" alt="" />
+          <span class="navbar__title pl-lg-2 position-relative"
+            >Coffee Shop</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          style="outline: none"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><svg
+              viewBox="0 0 16 16"
+              class="bi bi-menu-button-wide-fill"
+              fill="#6A4029"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 7H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM2 6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H2z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M15 11H1v-1h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm9.927.427l.396.396a.25.25 0 0 0 .354 0l.396-.396A.25.25 0 0 0 13.396 2h-.792a.25.25 0 0 0-.177.427z"
+              /></svg
+          ></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-lg-auto pt-lg-2">
+            <li class="nav-item">
+              <a class="pr-lg-4 nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="pr-lg-4 nav-link" href="productCost.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="pr-lg-4 nav-link" href="#">Your Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">History</a>
+            </li>
+          </ul>
+          <div
+            class="d-flex justify-content-around mt-2 align-self-lg-center pt-lg-1"
+          >
+            <button class="button__logoSearching mr-lg-4">
+              <img
+                class="searching__logo"
+                src="./assets/images/Icons/searchingIcons.svg"
+                alt="searchingLogo"
+              />
+            </button>
+            <a href="#" class="position-relative mr-lg-4"
+              ><span class="rounded-circle supply__Product">99+</span
+              ><img
+                class="chat__Logo"
+                src="./assets/images/Icons/chatIcons.svg"
+                alt="chatLogo"
+            /></a>
+            <a href="#"
+              ><img
+                class="costumer__Logo"
+                src="./assets/images/Icons/logoCostumerIcons.svg"
+                alt="costumerLogo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Product -->
+    <hr class="mt-lg-3 d-none d-lg-block" />
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="product__detailsOne">
+              <div class="breadcrumb__details mt-4 mt-lg-3">
+                <a class="breadcrumb__listItem" href="#">Favorite & Promo</a>
+                <a class="breadcrumb__listItem active" href="#">> Cold Brew</a>
+              </div>
+              <img
+                class="product__pictureDetail mt-4 mb-xl-3 mt-lg-5"
+                src="./assets/images/mainImage/DetailProduct.svg"
+                alt="ImagePicture"
+              />
+            </div>
+
+            <!-- Dekstop Display -->
+            <section
+              class="d-none d-lg-block delivery__content p-lg-4 col-lg-12 mt-lg-4"
+            >
+              <h2 class="tittle_delivTime pt-lg-3 mb-lg-4">
+                Delivery and Time
+              </h2>
+              <div class="delivey__category mb-lg-4 ml-lg-2">
+                <button class="option__delivCatagory active">Dine in</button>
+                <button class="option__delivCatagory">Door Delivery</button>
+                <button class="option__delivCatagory">Pick up</button>
+              </div>
+              <form class="ml-lg-2">
+                <div class="form-group row mb-lg-4 py-lg-3">
+                  <label for="delivery__option" class="col-lg-4 col-form-label"
+                    >Now</label
+                  >
+                  <div class="col-lg-6">
+                    <button class="option__deliv active">Yes</button>
+                    <button class="option__deliv">No</button>
+                  </div>
+                </div>
+                <div class="form-group row pb-lg-2">
+                  <label for="setTime" class="col-lg-4 col-form-label"
+                    >Set Time</label
+                  >
+                  <div class="col-lg-8">
+                    <input
+                      type="text"
+                      placeholder="Enter time for reservation"
+                      class="form-control"
+                      id="setTime"
+                    />
+                  </div>
+                </div>
+              </form>
+            </section>
+            <!-- ========================================================= -->
+          </div>
+          <div class="col-lg-6">
+            <div class="Product__detailsTwo">
+              <h1
+                class="titleProduct__details mt-3 mt-xl-5 pt-xl-5 mb-3 mb-lg-4"
+              >
+                COLD BREW
+              </h1>
+              <p class="descProduct__details pr-xl-2 pl-lg-2 ml-lg-4 mb-lg-4">
+                Cold brewing is a method of brewing that combines ground coffee
+                and cool water and uses time instead of heat to extract the
+                flavor. It is brewed in small batches and steeped for as long as
+                48 hours.
+              </p>
+              <p class="descDelivery__product pl-lg-2 ml-lg-4">
+                Delivery only on <strong>Monday to friday</strong> at
+                <strong>1 - 7 pm</strong>
+              </p>
+              <div
+                class="d-flex align-items-center flex-column flex-lg-row pl-lg-2 ml-lg-4 mt-lg-4"
+              >
+                <div
+                  class="d-flex align-items-center order-2 order-lg-1 mt-2 mb-4 mt-lg-2 mb-lg-5 inputProduct__range"
+                >
+                  <button type="button" class="minbtn">
+                    <svg
+                      style="text-align: center"
+                      width="2em"
+                      height="1.4em"
+                      viewBox="0 0 16 16"
+                      class="bi bi-dash-circle"
+                      fill="red"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="inputbtn"
+                    max="10"
+                    min="0"
+                    type="text"
+                    readonly
+                    value="2"
+                  />
+                  <button type="button" class="plusbtn">
+                    <svg
+                      width="2em"
+                      style="text-align: center"
+                      height="1.4em"
+                      viewBox="0 0 16 16"
+                      class="bi bi-plus-circle"
+                      fill="#6A4029"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h2
+                  class="priceTag__Product order-1 order-lg-2 pt-lg-2 ml-lg-auto mb-lg-5"
+                >
+                  IDR 30.000
+                </h2>
+              </div>
+            </div>
+            <section
+              class="d-block d-md-none delivery__content p-4 p-lg-4 col-lg-12 mt-lg-5"
+            >
+            <!-- Mobile Display -->
+              <h2 class="tittle_delivTime pt-lg-3 mb-lg-4">
+                Delivery and Time
+              </h2>
+              <div class="delivey__category mb-lg-4 ml-lg-2">
+                <button class="option__delivCatagory active">Dine in</button>
+                <button class="option__delivCatagory">Door Delivery</button>
+                <button class="option__delivCatagory">Pick up</button>
+              </div>
+              <form class="ml-lg-2">
+                <div class="form-group row mb-lg-4 py-lg-3">
+                  <label for="delivery__option" class="col-lg-4 col-form-label"
+                    >Now</label
+                  >
+                  <div class="col-lg-6">
+                    <button class="option__deliv active">Yes</button>
+                    <button class="option__deliv">No</button>
+                  </div>
+                </div>
+                <div class="form-group row pb-lg-2">
+                  <label for="setTime" class="col-lg-4 col-form-label"
+                    >Set Time</label
+                  >
+                  <div class="col-lg-8">
+                    <input
+                      type="text"
+                      placeholder="Enter time for reservation"
+                      class="form-control"
+                      id="setTime"
+                    />
+                  </div>
+                </div>
+              </form>
+            </section>
+            <!-- ========================================================= -->
+
+            <!-- Dekstop Display -->
+            <div class="button__Cart d-none d-lg-block">
+              <button class="col-12 btn__toCartnStaf mb-lg-4" type="button">
+                Add to Cart
+              </button>
+              <button class="col-12 btn__toCartnStaf" type="button">
+                Ask a Staff
+              </button>
+            </div>
+            <!-- ===================================== -->
+          </div>
+          <div
+            style="padding: 0 !important"
+            class="d-flex col-lg-12 flex-lg-row flex-column mb-4 align-items-center"
+          >
+            <div class="col-lg-5 mt-4 mb-4 mb-lg-0 mt-lg-5">
+              <div class="catagory__sizeProduct py-3 py-xl-4">
+                <h2 class="title__chooseSize">Choose a size</h2>
+                <div class="choose_sizeDrink pt-lg-2 ml-lg-5 pb-lg-2">
+                  <a href="#"
+                    ><img src="./assets/images/Icons/R_Size.svg" alt="R_Size"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/Icons/L_Size.svg" alt="L_Size"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/Icons/XL_Size.svg" alt="Xl_Size"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="button__Cart col-12 d-block d-md-none">
+              <button class="btn__toCartnStaf mb-3 mb-lg-4" type="button">
+                Add to Cart
+              </button>
+              <button class="btn__toCartnStaf" type="button">
+                Ask a Staff
+              </button>
+            </div>
+            <div class="col-lg-7 mt-4 ml-lg-4 mt-lg-5">
+              <div class="detail_checkoutProduct py-4 py-lg-3 py-xl-4 px-lg-5">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <img
+                    class="detail_imageProd"
+                    src="./assets/images/mainImage/DetailProduct.svg"
+                    alt="image_lookCheckout"
+                  />
+                  <div class="flex-column mt-3 mt-xl-0 ml-4 mr-auto ml-lg-3">
+                    <div class="list__details">
+                      <h2 class="title_drinkCheck">COLD BREW</h2>
+                      <ul class="list-unstyled">
+                        <li>x1 (Large)</li>
+                        <li>x1 (Regular)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="mt-lg-2 mt-xl-2 checkOut__name ml-lg-auto">Checkout</h2>
+                  <a href="#"
+                    ><img
+                      class="ml-lg-3 ml-xl-4 pb-lg-0 arrow__icons"
+                      src="./assets/images/Icons/arrows_checkout.svg"
+                      alt="icon_arrowCheckout"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Footer Section -->
+    <div class="footer__displayDetails">
+      <footer class="section-footer mb-2 border-top">
+        <div class="container mt-4 mt-lg-5">
+          <div
+            class="footer__details d-flex flex-column flex-lg-row bd-highlight"
+          >
+            <div class="order-3 order-lg-1 p-2 flex-grow-1 bd-highlight">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/logo/logoNav.svg" alt="FooterLogo" />
+                <span class="title_logoFooter">Coffie Shop</span>
+              </div>
+              <p class="desc__footer mt-4 mt-lg-3">
+                Coffee Shop is a store that sells some good meals, and
+                especially coffee. We provide high quality beans
+              </p>
+              <div class="logo_media">
+                <a href="#"
+                  ><img
+                    src="./assets/images/Icons/facebook_icons.svg"
+                    alt="FB_ICONS"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/Icons/instagram_icons.svg"
+                    alt="IG_ICONS"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/Icons/twitter_icons.svg"
+                    alt="TWITTER_ICONS"
+                /></a>
+              </div>
+              <p class="bywhat mt-3 mt-lg-3">©2020CoffeeStore</p>
+            </div>
+            <div class="order-1 order-lg-2 p-2 bd-highlight pr-lg-5">
+              <h5 class="title_productFooter">Product</h5>
+              <ul class="list-unstyled mt-lg-3">
+                <li><a href="#">Download </a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="order-2 order-lg-3 p-2 bd-highlight pl-lg-5">
+              <h5 class="title_productFooter">Engage</h5>
+              <ul class="list-unstyled mt-lg-3">
+                <li><a href="#">Coffe Shop ? </a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS Bootstraps Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ================================================================================ -->
+  </body>
+</html>
