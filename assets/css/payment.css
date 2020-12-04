@@ -298,11 +298,11 @@ button.btn_confirm:hover {
     font-size: 17px;
   }
   div.card__atm input[type="radio"]:after {
-    top: -6px;
+    top: -6.2px;
     left: 0.5px;
   }
   div.card__atm input[type="radio"]:checked:after {
-    top: -6px;
+    top: -6.2px;
     left: 0.5px;
   }
 }
