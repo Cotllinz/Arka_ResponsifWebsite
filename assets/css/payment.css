@@ -243,14 +243,15 @@ button.btn_confirm {
 }
 div.card__atm input[type="radio"] {
   cursor: pointer;
+  position: relative;
 }
 div.card__atm input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -9px;
+  top: 0px;
   left: -1px;
-  position: relative;
+  position: absolute;
   background-color: #d1d3d1;
   content: "";
   display: inline-block;
@@ -261,9 +262,9 @@ div.card__atm input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -9px;
+  top: 0px;
   left: -1px;
-  position: relative;
+  position: absolute;
   background-color: #895537;
   content: "";
 }
@@ -298,12 +299,10 @@ button.btn_confirm:hover {
     font-size: 17px;
   }
   div.card__atm input[type="radio"]:after {
-    top: -6.2px;
-    left: 0.5px;
+    left: -1px;
   }
   div.card__atm input[type="radio"]:checked:after {
-    top: -6.2px;
-    left: 0.5px;
+    left: -1px;
   }
 }
 /* Footer Section Component */
