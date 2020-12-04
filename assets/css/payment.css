@@ -73,10 +73,16 @@ main.bg__payment {
 
 /* Media Query Main */
 
+@media (max-width: 1024px) {
+  main.bg__payment {
+    height: auto;
+  }
+}
+
 @media (max-width: 576px) {
   main.bg__payment {
     height: auto;
-    background-position: 70% 0%;
+    background-position: 66% 0%;
   }
 }
 
@@ -169,6 +175,9 @@ div.total_productPrice h2 {
   h1.title__orderList {
     padding-right: 0;
     text-align: center;
+  }
+  h2.title_card {
+    font-size: 27px;
   }
   div.card > div p.name_product {
     font-size: 15px;
@@ -270,8 +279,16 @@ a.edit__btn:hover {
   color: #000;
   cursor: pointer;
 }
-
+button.btn_confirm:hover {
+  background: #fa8034;
+  color: #fff;
+}
 /* Media Query Right Main Content */
+@media (max-width: 1024px) {
+  div.address__section {
+    margin-top: 150px;
+  }
+}
 
 @media (max-width: 576px) {
   div.address__section {
@@ -279,6 +296,12 @@ a.edit__btn:hover {
   }
   div.address__section > div.address_card h5 {
     font-size: 17px;
+  }
+  div.card__atm input[type="radio"]:after {
+    top: -7px;
+  }
+  div.card__atm input[type="radio"]:checked:after {
+    top: -7px;
   }
 }
 /* Footer Section Component */
