@@ -47,6 +47,7 @@ span.supply__Product {
   background-color: #6a4029;
   color: white;
   width: 25px;
+  border-radius: 25px;
   object-fit: contain;
   border: 1px solid;
   position: absolute;

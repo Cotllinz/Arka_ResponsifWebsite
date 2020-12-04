@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #bcbaba;
+}
+/* Navbar Section Style */
+
+/* Style Poition, color dll navbar */
+span.navbar__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  top: 5px;
+  color: black;
+}
+
+li.nav-item a.nav-link {
+  font-family: "Rubik", sans-serif;
+  padding-left: 7px;
+  font-size: 16px;
+  color: #4f5665;
+}
+li.nav-item.active a.nav-link {
+  color: #6a4029;
+  font-weight: 700;
+}
+button.button__logoSearching {
+  outline: none !important;
+  border: none;
+  background: none;
+}
+
+.searching__logo {
+  width: 1.8em;
+  object-fit: contain;
+}
+.chat__Logo {
+  width: 1.7em;
+  object-fit: contain;
+  position: relative;
+  z-index: -1;
+  top: 3px;
+}
+span.supply__Product {
+  background-color: #6a4029;
+  color: white;
+  width: 25px;
+  border-radius: 25px;
+  object-fit: contain;
+  border: 1px solid;
+  position: absolute;
+  bottom: 19.5px;
+  font-size: 10px;
+  right: 19px;
+  text-align: center;
+  padding: 3px 4px 3.1px 4px;
+}
+
+.costumer__Logo {
+  width: 2em;
+  object-fit: contain;
+}
+
+/* Main Setting All */
+main.bg__payment {
+  background-image: url("../images/mainImage/DetailProduct1.jpg");
+  background-size: cover;
+  background-position: 0% 90%;
+  height: 1060px;
+}
+
+/* Media Query Main */
+
+@media (max-width: 576px) {
+  main.bg__payment {
+    height: auto;
+    background-position: 70% 0%;
+  }
+}
+
+/* Left Paymen Main Content */
+
+h1.title__orderList {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  padding-right: 40%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2.title_card {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.order__listProduct > div.card {
+  border-radius: 20px;
+  width: 460px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+div.card > div p.name_product {
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+h5.priceTag {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.card__all {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 200px;
+}
+.card__all::-webkit-scrollbar {
+  width: 5px;
+}
+.card__all::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.card__all::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+div.sub_price {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+div.sub_price h5 {
+  line-height: 17px;
+}
+div.sub_price p {
+  line-height: 17px;
+}
+div.total_productPrice h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Media Query Left Main Content */
+@media (max-width: 1024px) {
+  .order__listProduct > div.card {
+    width: 400px;
+  }
+
+  h1.title__orderList {
+    padding-right: 20%;
+  }
+
+  div.total_productPrice h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .order__listProduct > div.card {
+    width: 100%;
+  }
+  h1.title__orderList {
+    padding-right: 0;
+    text-align: center;
+  }
+  div.card > div p.name_product {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+  h5.priceTag {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+  }
+  div.total_productPrice h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  div.card > div p.name_product {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+}
+
+/* right Paymen Main Content */
+
+div.address__section {
+  margin-top: 137px;
+}
+div.address__section > div.address_card,
+div.paymentOption__card {
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+}
+h2.nameTag__details {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+a.edit__btn {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+div.address_card > div.card-body h5:nth-child(1) {
+  font-weight: 500;
+}
+
+button.btn_confirm {
+  height: 70px;
+  border-radius: 20px;
+  background: #6a4029;
+  box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  outline: none !important;
+}
+div.card__atm input[type="radio"] {
+  cursor: pointer;
+}
+div.card__atm input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -9px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+}
+
+div.card__atm input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -9px;
+  left: -1px;
+  position: relative;
+  background-color: #895537;
+  content: "";
+}
+div.card__atm a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Hover Right Main Content */
+
+a.edit__btn:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Media Query Right Main Content */
+
+@media (max-width: 576px) {
+  div.address__section {
+    margin-top: 20px;
+  }
+  div.address__section > div.address_card h5 {
+    font-size: 17px;
+  }
+}
+/* Footer Section Component */
+
+span.title_logoFooter {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  font-family: "Rubik", sans-serif;
+}
+p.desc__footer {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  width: 330px;
+}
+.logo_media a img {
+  padding-right: 10px;
+}
+p.bywhat {
+  color: #afb5c0;
+  font-size: 16px;
+}
+.title_productFooter {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.list-unstyled li {
+  padding-bottom: 10px;
+}
+.list-unstyled li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Footer Hover Style */
+.list-unstyled li a:hover {
+  color: rgb(114, 108, 108);
+  text-decoration: none;
+}
+
+/* Media Query Footer */
+@media (max-width: 360px) {
+  p.desc__footer {
+    width: 300px;
+  }
+}

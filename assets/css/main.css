@@ -47,6 +47,7 @@ span.supply__Product {
   background-color: #6a4029;
   color: white;
   width: 25px;
+  border-radius: 25px;
   object-fit: contain;
   border: 1px solid;
   position: absolute;
@@ -282,41 +283,40 @@ span.title_logoFooter {
   margin-left: 10px;
   font-family: "Rubik", sans-serif;
 }
-p.desc__footer{
+p.desc__footer {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   width: 330px;
 }
-.logo_media a img{
+.logo_media a img {
   padding-right: 10px;
 }
-p.bywhat{
-  color: #AFB5C0;
+p.bywhat {
+  color: #afb5c0;
   font-size: 16px;
 }
-.title_productFooter{
+.title_productFooter {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
-.list-unstyled li{
+.list-unstyled li {
   padding-bottom: 10px;
 }
-.list-unstyled li a{
+.list-unstyled li a {
   color: #000;
   text-decoration: none;
 }
 
 /* Footer Hover Style */
-.list-unstyled li a:hover{
+.list-unstyled li a:hover {
   color: rgb(114, 108, 108);
   text-decoration: none;
 }
 
 /* Media Query Footer */
 @media (max-width: 360px) {
- p.desc__footer{
-
-  width: 300px;
-}
+  p.desc__footer {
+    width: 300px;
+  }
 }
