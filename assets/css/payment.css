@@ -299,11 +299,11 @@ button.btn_confirm:hover {
   }
   div.card__atm input[type="radio"]:after {
     top: -6px;
-    left: 0px;
+    left: 0.7px;
   }
   div.card__atm input[type="radio"]:checked:after {
     top: -6px;
-    left: 0px;
+    left: 0.7px;
   }
 }
 /* Footer Section Component */
