@@ -298,12 +298,12 @@ button.btn_confirm:hover {
     font-size: 17px;
   }
   div.card__atm input[type="radio"]:after {
-    top: -7px;
-    left: -2px;
+    top: -6px;
+    left: -3px;
   }
   div.card__atm input[type="radio"]:checked:after {
-    top: -7px;
-    left: -2px;
+    top: -6px;
+    left: -3px;
   }
 }
 /* Footer Section Component */
