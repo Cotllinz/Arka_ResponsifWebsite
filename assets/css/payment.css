@@ -199,7 +199,7 @@ div.total_productPrice h2 {
   }
 }
 
-/* right Paymen Main Content */
+/* right Payment Main Content */
 
 div.address__section {
   margin-top: 137px;
@@ -299,9 +299,11 @@ button.btn_confirm:hover {
   }
   div.card__atm input[type="radio"]:after {
     top: -7px;
+    left: -2px;
   }
   div.card__atm input[type="radio"]:checked:after {
     top: -7px;
+    left: -2px;
   }
 }
 /* Footer Section Component */
