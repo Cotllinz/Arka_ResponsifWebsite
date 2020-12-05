@@ -466,7 +466,9 @@ p.bywhat {
 
 /* Media Query Footer */
 @media (max-width: 576px) {
- 
+  div.footer__displayDetails {
+    position: static;
+  }
   footer.section-footer {
     position: static;
   }
