@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background: #bcbaba;
-}
+
 /* Navbar Section Style */
 
 /* Style Poition, color dll navbar */
@@ -229,8 +227,8 @@ a.select_all:hover {
     padding-right: 0px;
   }
   main.bg__history {
-  background-position: 35% 55%;
-}
+    background-position: 35% 55%;
+  }
 }
 
 /* Footer Section Component */

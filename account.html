@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop - Rudy</title>
     <!-- My Own CSS -->
-    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link rel="stylesheet" href="./assets/css/account.css" />
     <!-- Font Link GoogleFont -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -107,171 +107,156 @@
       </div>
     </nav>
 
-    <!-- Main Section -->
-    <main class="bg__payment">
+    <main class="bg__account">
       <hr class="mt-lg-3 d-none d-lg-block" />
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div class="order__listProduct mt-4 mt-lg-5 mt-xl-5">
-              <h1 class="title__orderList">Checkout your item now!</h1>
-              <div class="card px-xl-2 px-lg-2 pb-lg-4 pb-xl-4 mt-3 mt-xl-5">
-                <h2
-                  class="title_card pt-4 pb-3 p-lg-4 mt-lg-4 p-xl-5 mt-xl-4 text-center"
-                >
-                  Order Summary
+      <div class="container mt-lg-4 pt-lg-2 pb-lg-5">
+          <form action="">
+        <h2 class="title ml-lg-1 mt-lg-4 mb-lg-4">User Profile</h2>
+        <div class="card__account p-lg-5">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="image__fit">
+                <img
+                  src="./assets/images/mainImage/images_account.jpg"
+                  alt="image__account"
+                  class="style__image"
+                />
+              </div>
+              <div class="label__name">
+                <h2 class="mt-lg-2">Zulaikha</h2>
+                <p>zulaikha17@gmail.com</p>
+              </div>
+              <div class="all_button">
+                <button class="col btn_photo mb-lg-3">Choose photo</button>
+                <button class="col btn_removePhoto mb-lg-5">
+                  Remove photo
+                </button>
+                <button class="col btn_editPassword mb-lg-5">
+                  Edit Password
+                </button>
+
+                <h2 class="sure__change mb-lg-5 px-lg-5 text-center">
+                  Do you want to save the change?
                 </h2>
-                <div class="card-body px-lg-2 px-xl-4">
-                  <div class="card__all">
-                    <div class="d-flex mb-xl-3 mb-3 align-items-center">
-                      <img
-                        src="./assets/images/mainImage/payment1.svg"
-                        alt="paymentItems"
-                      />
-                      <div class="flex-xl-column ml-2 ml-lg-3 ml-xl-4">
-                        <p class="name_product">Hazelnut Latte</p>
-                        <p class="name_product">x 1</p>
-                        <p class="name_product">Regular</p>
-                      </div>
-                      <h5 class="priceTag pr-xl-2 pr-2 ml-auto ml-xl-auto">
-                        IDR 24.0
-                      </h5>
-                    </div>
-                    <div class="d-flex mb-3 mb-xl-3 align-items-center">
-                      <img
-                        src="./assets/images/mainImage/payment2.svg"
-                        alt="paymentItems"
-                      />
-                      <div class="flex-xl-column ml-2 ml-lg-3 ml-xl-4">
-                        <p class="name_product">Chicken Fire Wings</p>
-                        <p class="name_product">x 2</p>
-                      </div>
-                      <h5 class="priceTag pr-xl-2 pr-2 ml-auto ml-xl-auto">
-                        IDR 30.0
-                      </h5>
-                    </div>
-                    <div class="d-flex mb-xl-3 mb-3 align-items-center">
-                      <img
-                        src="./assets/images/mainImage/payment2.svg"
-                        alt="paymentItems"
-                      />
-                      <div class="flex-xl-column ml-2 ml-lg-3 ml-xl-4">
-                        <p class="name_product">Chicken Fire Wings</p>
-                        <p class="name_product">x 2</p>
-                        <p class="name_product">Regular</p>
-                      </div>
-                      <h5 class="priceTag pr-xl-2 pr-2 ml-auto ml-xl-auto">
-                        IDR 30.0
-                      </h5>
-                    </div>
-                  </div>
-                  <hr class="mt-xl-4 mt-4" />
-                  <div class="d-flex mt-xl-4 mt-4 sub_price">
-                    <h5>SUBTOTAL</h5>
-                    <p class="ml-auto ml-xl-auto">IDR 120.000</p>
-                  </div>
-                  <div class="d-flex sub_price">
-                    <h5>TAX & FEES</h5>
-                    <p class="ml-auto ml-xl-auto">IDR 20.000</p>
-                  </div>
-                  <div class="d-flex sub_price mb-xl-5">
-                    <h5>SHIPPING</h5>
-                    <p class="ml-auto ml-xl-auto">IDR 10.000</p>
-                  </div>
-                  <div
-                    class="d-flex mt-xl-4 mt-lg-4 mt-3 pb-3 pb-lg-5 pb-xl-5 total_productPrice"
-                  >
-                    <h2>Total</h2>
-                    <h2 class="ml-auto ml-xl-auto">IDR 150.000</h2>
-                  </div>
-                </div>
+                <button class="col btn_saveChange mb-lg-3">Save Change</button>
+                <button class="col btn_cancel mb-lg-5">Cancel</button>
+                <button class="col btn_logout">Log out</button>
               </div>
             </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="address__section p-lg-2 p-xl-5">
-              <div class="d-flex align-items-lg-center align-items-center">
-                <h2 class="nameTag__details mb-xl-2 mb-2 ml-2 ml-xl-2">
-                  Address details
-                </h2>
-                <a
-                  class="edit__btn ml-xl-auto ml-auto mb-2 mb-xl-2 mr-2 mr-xl-3"
-                  >edit</a
-                >
-              </div>
-              <div class="card address_card px-2 px-xl-3 pt-2 pt-xl-3">
-                <div class="card-body">
-                  <h5><strong>Delivery</strong> to Iskandar Street</h5>
-                  <hr />
-                  <h5 class="pr-xl-3">
-                    Km 5 refinery road oppsite re public road, effurun, Jakarta
-                  </h5>
-                  <hr />
-                  <h5>+62 81348287878</h5>
+            <div class="col-xl-8">
+              <div class="card__editAccount mt-lg-2 py-lg-3 px-lg-5">
+                <div class="d-flex position-relative mt-lg-2">
+                  <h2 class="contact__title">Contacts</h2>
+                  <a class="btn_edit" href="#"
+                    ><img
+                      src="./assets/images/Icons/edit_accountIcons.svg"
+                      alt="edit_btn"
+                  /></a>
                 </div>
+                
+                  <div class="form-row mt-lg-3">
+                    <div class="form-group col-lg-6">
+                      <label for="email">Email adress :</label>
+                      <input type="email" value="zulaikha17@gmail.com" class="form-control" required id="email" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label class="mobile_date_form" for="Mobile Number">Mobile Number :</label>
+                      <input
+                        type="tel"
+                        class="form-control mobile_date_input"
+                        id="mobile_number"
+                        required
+                        placeholder="(+62)82034093032"
+                        pattern="(+62)[0-9]{1}[0-9]{4}[0-9]{4}[0-9]{2}"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 mt-lg-4">
+                      <label for="address">Delivery adress :</label>
+                      <textarea
+                        class="form-control"
+                        name="delivery"
+                        required
+                        cols="30"
+                        placeholder="Iskandar Street no. 67 Block A Near Bus Stop"
+                        id="delivery_address"
+                        rows="2"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <h2 class="title_detail my-lg-4 pb-lg-2">Details</h2>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label for="name">Display name :</label>
+                      <input type="text" class="form-control" value="Zulaikha" required id="email" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label class="mobile_date_form" for="date">DD/MM/YY</label>
+                      <input
+                        type="date"
+                        placeholder="dd-mm-yyyy"
+                        class="form-control mobile_date_input"
+                        id="mobile_number"
+                        value="2020-12-08"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-lg-12 mt-lg-2">
+                      <label for="name">First name :</label>
+                      <input
+                        type="text"
+                        required
+                        value="Zulaikha"
+                        class="form-control w-50"
+                        id="firstName"
+                      />
+                    </div>
+                    <div class="form-group col-lg-12 mt-lg-2">
+                      <label for="name">Last name :</label>
+                      <input
+                        type="text"
+                        required
+                        value="Nirmala"
+                        class="form-control w-50"
+                        id="lastName"
+                      />
+                    </div>
+                    <div class="radio_btn mt-lg-3 ml-lg-auto mr-lg-auto pb-lg-4">
+                      <div class="form-check form-check-inline mr-lg-5">
+                        <input
+                          class="form-check-input "
+                          type="radio"
+                          required
+                          name="inlineRadioOptions"
+                          id="inlineRadio1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="inlineRadio1"
+                          >Male</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline ml-lg-5">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                          checked
+                        />
+                        <label class="form-check-label active" for="inlineRadio2"
+                          >Female</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <h2
-                class="nameTag__details mt-4 mt-xl-5 mt-lg-2 mb-lg-2 mb-4 mb-xl-4 ml-2 ml-xl-2"
-              >
-                Payment method
-              </h2>
-              <div class="card paymentOption__card px-3 px-xl-3 py-2 py-xl-2">
-                <div class="card-body">
-                  <div class="d-flex align-items-center card__atm">
-                    <input
-                      type="radio"
-                      name="Payment_Method"
-                      id="Payment_Method1"
-                      value="option1"
-                    />
-                    <img
-                      class="ml-xl-3 ml-3"
-                      src="./assets/images/Icons/Icons_cardCredit.svg"
-                      alt="card__credit"
-                    />
-                    <a class="ml-xl-3 ml-3">Card</a>
-                  </div>
-                  <hr class="ml-xl-4 ml-4" />
-                  <div class="d-flex align-items-center card__atm">
-                    <input
-                      type="radio"
-                      name="Payment_Method"
-                      id="Payment_Method2"
-                      value="option2"
-                      checked
-                    />
-                    <img
-                      class="ml-xl-3 ml-3"
-                      src="./assets/images/Icons/Icon_BankAcc.svg"
-                      alt="card__Bank"
-                    />
-                    <a class="ml-xl-3 ml-3">Bank account</a>
-                  </div>
-                  <hr class="ml-xl-4 ml-4" />
-                  <div class="d-flex align-items-center card__atm">
-                    <input
-                      type="radio"
-                      name="Payment_Method"
-                      id="Payment_Method3"
-                      value="option3"
-                    />
-                    <img
-                      class="ml-xl-3 ml-3"
-                      src="./assets/images/Icons/icons_COD.svg"
-                      alt="card__COD"
-                    />
-                    <a class="ml-xl-3 ml-3">Cash on delivery</a>
-                  </div>
-                </div>
-              </div>
-              <button class="mt-xl-5 mt-4 mb-5 mb-xl-0 w-100 btn_confirm">
-                Confirm and Pay
-              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
+
     <!-- Footer Section -->
     <footer class="section-footer mb-2 border-top">
       <div class="container mt-4 mt-lg-5">
