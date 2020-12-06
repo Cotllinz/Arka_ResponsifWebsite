@@ -109,58 +109,73 @@
 
     <main class="bg__account">
       <hr class="mt-lg-3 d-none d-lg-block" />
-      <div class="container mt-lg-4 pt-lg-2 pb-lg-5">
-          <form action="">
-        <h2 class="title ml-lg-1 mt-lg-4 mb-lg-4">User Profile</h2>
-        <div class="card__account p-lg-5">
-          <div class="row">
-            <div class="col-xl-4">
-              <div class="image__fit">
-                <img
-                  src="./assets/images/mainImage/images_account.jpg"
-                  alt="image__account"
-                  class="style__image"
-                />
-              </div>
-              <div class="label__name">
-                <h2 class="mt-lg-2">Zulaikha</h2>
-                <p>zulaikha17@gmail.com</p>
-              </div>
-              <div class="all_button">
-                <button class="col btn_photo mb-lg-3">Choose photo</button>
-                <button class="col btn_removePhoto mb-lg-5">
-                  Remove photo
-                </button>
-                <button class="col btn_editPassword mb-lg-5">
-                  Edit Password
-                </button>
-
-                <h2 class="sure__change mb-lg-5 px-lg-5 text-center">
-                  Do you want to save the change?
-                </h2>
-                <button class="col btn_saveChange mb-lg-3">Save Change</button>
-                <button class="col btn_cancel mb-lg-5">Cancel</button>
-                <button class="col btn_logout">Log out</button>
-              </div>
-            </div>
-            <div class="col-xl-8">
-              <div class="card__editAccount mt-lg-2 py-lg-3 px-lg-5">
-                <div class="d-flex position-relative mt-lg-2">
-                  <h2 class="contact__title">Contacts</h2>
-                  <a class="btn_edit" href="#"
-                    ><img
-                      src="./assets/images/Icons/edit_accountIcons.svg"
-                      alt="edit_btn"
-                  /></a>
+      <div class="container mt-lg-4 pt-lg-2 pt-4 pb-5 pb-lg-5">
+        <h2 class="title ml-lg-1 mt-lg-4 mb-3 mb-lg-4">User Profile</h2>
+        <form action="#">
+          <div class="card__account p-lg-5 pt-4">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="image__fit">
+                  <img
+                    src="./assets/images/mainImage/images_account.jpg"
+                    alt="image__account"
+                    class="style__image"
+                  />
                 </div>
-                
-                  <div class="form-row mt-lg-3">
+                <div class="label__name mt-3 mt-lg-2">
+                  <h2>Zulaikha</h2>
+                  <p>zulaikha17@gmail.com</p>
+                </div>
+                <div class="all_button">
+                  <button class="col btn_photo mb-lg-3 mb-3">
+                    Choose photo
+                  </button>
+                  <button class="col btn_removePhoto mb-lg-5 mb-5">
+                    Remove photo
+                  </button>
+                  <button class="col btn_editPassword mb-lg-5 mb-4">
+                    Edit Password
+                  </button>
+                  <div class="save_itbtn d-none d-lg-block">
+                    <h2 class="sure__change mb-lg-5 px-lg-5 text-center">
+                      Do you want to save the change?
+                    </h2>
+                    <button class="col btn_saveChange mb-lg-3">
+                      Save Change
+                    </button>
+                    <button class="col btn_cancel mb-lg-5">Cancel</button>
+                    <button class="col btn_logout">Log out</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8">
+                <div
+                  class="card__editAccount mt-lg-2 py-4 py-lg-3 px-3 px-lg-5"
+                >
+                  <div class="d-flex position-relative mt-lg-2">
+                    <h2 class="contact__title">Contacts</h2>
+                    <a class="btn_edit" href="#"
+                      ><img
+                        src="./assets/images/Icons/edit_accountIcons.svg"
+                        alt="edit_btn"
+                    /></a>
+                  </div>
+
+                  <div class="form-row mt-lg-3 mt-4">
                     <div class="form-group col-lg-6">
                       <label for="email">Email adress :</label>
-                      <input type="email" value="zulaikha17@gmail.com" class="form-control" required id="email" />
+                      <input
+                        type="email"
+                        value="zulaikha17@gmail.com"
+                        class="form-control"
+                        required
+                        id="email"
+                      />
                     </div>
-                    <div class="form-group col-lg-6">
-                      <label class="mobile_date_form" for="Mobile Number">Mobile Number :</label>
+                    <div class="form-group col-lg-6 mt-2 mt-lg-0">
+                      <label class="mobile_date_form" for="Mobile Number"
+                        >Mobile Number :</label
+                      >
                       <input
                         type="tel"
                         class="form-control mobile_date_input"
@@ -170,7 +185,7 @@
                         pattern="(+62)[0-9]{1}[0-9]{4}[0-9]{4}[0-9]{2}"
                       />
                     </div>
-                    <div class="form-group col-lg-6 mt-lg-4">
+                    <div class="form-group col-lg-6 mt-lg-4 mt-2">
                       <label for="address">Delivery adress :</label>
                       <textarea
                         class="form-control"
@@ -183,14 +198,22 @@
                       ></textarea>
                     </div>
                   </div>
-                  <h2 class="title_detail my-lg-4 pb-lg-2">Details</h2>
+                  <h2 class="title_detail my-lg-4 my-3 pb-1 pb-lg-2">Details</h2>
                   <div class="form-row">
                     <div class="form-group col-lg-6">
                       <label for="name">Display name :</label>
-                      <input type="text" class="form-control" value="Zulaikha" required id="email" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="Zulaikha"
+                        required
+                        id="email"
+                      />
                     </div>
-                    <div class="form-group col-lg-6">
-                      <label class="mobile_date_form" for="date">DD/MM/YY</label>
+                    <div class="form-group col-lg-6 mt-2 mt-lg-0">
+                      <label class="mobile_date_form" for="date"
+                        >DD/MM/YY</label
+                      >
                       <input
                         type="date"
                         placeholder="dd-mm-yyyy"
@@ -200,13 +223,13 @@
                         required
                       />
                     </div>
-                    <div class="form-group col-lg-12 mt-lg-2">
+                    <div class="form-group col-lg-12 mt-2 mt-lg-2">
                       <label for="name">First name :</label>
                       <input
                         type="text"
                         required
                         value="Zulaikha"
-                        class="form-control w-50"
+                        class="form-control name_space"
                         id="firstName"
                       />
                     </div>
@@ -216,25 +239,27 @@
                         type="text"
                         required
                         value="Nirmala"
-                        class="form-control w-50"
+                        class="form-control name_space"
                         id="lastName"
                       />
                     </div>
-                    <div class="radio_btn mt-lg-3 ml-lg-auto mr-lg-auto pb-lg-4">
-                      <div class="form-check form-check-inline mr-lg-5">
+                    <div
+                      class="radio_btn mt-lg-3 mt-4 ml-auto mr-auto pb-4 ml-lg-auto mr-lg-auto pb-lg-4"
+                    >
+                      <div class="form-check form-check-inline mr-2 mr-lg-5">
                         <input
-                          class="form-check-input "
+                          class="form-check-input"
                           type="radio"
                           required
                           name="inlineRadioOptions"
                           id="inlineRadio1"
                           value="option1"
                         />
-                        <label class="form-check-label" for="inlineRadio1"
+                        <label class="form-check-label pl-2 pl-lg-3" for="inlineRadio1"
                           >Male</label
                         >
                       </div>
-                      <div class="form-check form-check-inline ml-lg-5">
+                      <div class="form-check form-check-inline ml-2 ml-lg-5">
                         <input
                           class="form-check-input"
                           type="radio"
@@ -243,17 +268,29 @@
                           value="option2"
                           checked
                         />
-                        <label class="form-check-label active" for="inlineRadio2"
+                        <label
+                          class="form-check-label pl-2 pl-lg-3 active"
+                          for="inlineRadio2"
                           >Female</label
                         >
                       </div>
                     </div>
                   </div>
-                </form>
+                  <div class="save_itbtn d-block d-lg-none">
+                    <h2 class="sure__change mb-4 px-4 text-center">
+                      Do you want to save the change?
+                    </h2>
+                    <button class="col btn_saveChange mb-3">
+                      Save Change
+                    </button>
+                    <button class="col btn_cancel mb-5">Cancel</button>
+                    <button class="col btn_logout">Log out</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </main>
 

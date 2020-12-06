@@ -64,7 +64,19 @@ span.supply__Product {
 main.bg__account {
   background-image: url("../images/mainImage/Bg__AccountPage.jpg");
   background-size: cover;
-  background-position: 0% 40%;
+  background-position: 0% 35%;
+}
+
+/* Media Query Main Background */
+@media (max-width: 1024px) {
+  main.bg__account {
+    background-position: 60% 70%;
+  }
+}
+@media (max-width: 576px) {
+  main.bg__account {
+    background-position: 0% 40%;
+  }
 }
 
 /* Left Account Style */
@@ -135,20 +147,20 @@ button.btn_logout {
   padding: 15px;
 }
 .all_button button:nth-child(1),
-.all_button button:nth-child(6) {
+.all_button .save_itbtn button:nth-child(3) {
   color: #6a4029;
   background: #ffba33;
 }
 .all_button button:nth-child(2),
-.all_button button:nth-child(5) {
+.all_button .save_itbtn button:nth-child(2) {
   color: #f8f8f8;
   background: #6a4029;
 }
-.all_button button:nth-child(5) {
+.all_button .save_itbtn button:nth-child(2) {
   filter: drop-shadow(0px 6px 20px rgba(106, 64, 41, 0.65));
 }
 .all_button button:nth-child(3),
-.all_button button:nth-child(7) {
+.all_button .save_itbtn button:nth-child(4) {
   color: #6a4029;
   border: 1px solid rgb(187, 186, 186);
   background: #fff;
@@ -162,24 +174,107 @@ h2.sure__change {
 
 /* Hover Left Account Style */
 .all_button button:nth-child(1):hover,
-.all_button button:nth-child(6):hover {
+.all_button .save_itbtn button:nth-child(3):hover {
   color: #703718;
   background: #ffaa00;
 }
 .all_button button:nth-child(2):hover,
-.all_button button:nth-child(5):hover {
+.all_button .save_itbtn button:nth-child(2):hover {
   color: #ffffff;
   background: #633015;
 }
 .all_button button:nth-child(3):hover,
-.all_button button:nth-child(7):hover {
+.all_button .save_itbtn button:nth-child(4):hover {
   color: #83360c;
   border: 1px solid rgb(126, 124, 124);
   background: #fff;
 }
 
 /* Media Query Left Account Style */
+@media (max-width: 1024px) {
+  h2.title {
+    text-align: center;
+    font-size: 50px;
+  }
+  div.label__name h2 {
+    font-size: 25px;
+  }
+  div.label__name p {
+    font-size: 20px;
+    line-height: 13px;
+  }
+  button.btn_photo,
+  button.btn_removePhoto,
+  button.btn_editPassword,
+  button.btn_saveChange,
+  button.btn_cancel,
+  button.btn_logout {
+    font-size: 17px;
+    width: 50%;
+    padding: 15px;
+  }
+  button.btn_editPassword,
+  button.btn_saveChange,
+  button.btn_cancel,
+  button.btn_logout {
+    font-size: 20px;
+    padding: 18px;
+  }
+  button.btn_logout {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  h2.title {
+    font-size: 35px;
+  }
+  button.btn_photo,
+  button.btn_removePhoto,
+  button.btn_editPassword,
+  button.btn_saveChange,
+  button.btn_cancel,
+  button.btn_logout {
+    width: 80%;
+  }
 
+  button.btn_saveChange,
+  button.btn_cancel,
+  button.btn_logout {
+    width: 100%;
+  }
+  button.btn_logout {
+    margin-bottom: 0;
+  }
+  .save_itbtn button:nth-child(3) {
+    color: #6a4029;
+    background: #ffba33;
+  }
+  .save_itbtn button:nth-child(2) {
+    color: #f8f8f8;
+    background: #6a4029;
+    filter: drop-shadow(0px 6px 20px rgba(106, 64, 41, 0.65));
+  }
+  .save_itbtn button:nth-child(4) {
+    color: #6a4029;
+    border: 1px solid rgb(187, 186, 186);
+    background: #fff;
+  }
+
+  /* Hover Media Query */
+  .save_itbtn button:nth-child(3):hover {
+    color: #703718;
+    background: #ffaa00;
+  }
+  .save_itbtn button:nth-child(2):hover {
+    color: #ffffff;
+    background: #633015;
+  }
+  .save_itbtn button:nth-child(4):hover {
+    color: #83360c;
+    border: 1px solid rgb(126, 124, 124);
+    background: #fff;
+  }
+}
 
 /* Right Account Style */
 div.card__editAccount {
@@ -230,6 +325,10 @@ div.form-group textarea {
   outline: none !important;
 }
 
+input.name_space {
+  width: 50%;
+}
+
 h2.title_detail {
   font-size: 25px;
   font-weight: 700;
@@ -247,6 +346,28 @@ div.radio_btn label.form-check-label {
 div.radio_btn label.form-check-label.active {
   font-weight: 700;
   color: #6a4029;
+}
+
+/* Media Query Right Account */
+
+@media (max-width: 576px) {
+  a.btn_edit {
+    position: absolute;
+    right: -7px;
+    top: -10px;
+  }
+  h2.contact__title {
+    font-size: 30px;
+  }
+  .form-group label.mobile_date_form,
+  input.mobile_date_input {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  input.name_space {
+    width: 100%;
+  }
 }
 /* Footer Section Component */
 
